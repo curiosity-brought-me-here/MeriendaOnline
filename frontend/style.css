@@ -1,0 +1,214 @@
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdfaf6;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header & Hero */
+.hero {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 2.5rem 1rem 1.5rem;
+  border-bottom: 2px solid #f2e6d8;
+}
+
+.hero h1 {
+  color: #d9534f;
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.welcome-text {
+  max-width: 650px;
+  margin: 0 auto 1.5rem;
+  color: #5a4a42;
+  font-size: 1rem;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+nav a:hover {
+  background-color: #f0e0d0;
+  color: #d9534f;
+}
+
+.subtitle {
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin:0 auto 1.5rem auto;
+}
+
+/* Menu Section & Grid */
+.menu {
+  max-width: 1100px;
+  margin: 2.5rem auto;
+  padding: 0 1rem;
+}
+
+.menu h2 {
+  text-align: center;
+  color: #4a3b32;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.75rem;
+}
+
+/* Product Card Styling */
+.product-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+}
+
+.product-card h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.product-card .description {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.product-card .price {
+  font-weight: bold;
+  color: #d9534f;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Card Actions (Qty + Button) */
+.card-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.card-actions input[type="number"] {
+  width: 50px;
+  padding: 0.4rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.card-actions button {
+  flex-grow: 1;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.card-actions button:hover {
+  background-color: #218838;
+}
+
+.cart-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.cart-controls input {
+  width: 50px;
+}
+
+/* Cart page container spacing */
+#app section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+/* Cart item layout and padding */
+.cart-item {
+  border-bottom: 1px solid #eee;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  background-color: #ffffff;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Delete button styling inside cart items */
+.cart-item .delete-btn {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cart-item .delete-btn:hover {
+  background-color: #c9302c;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #3a2e2b;
+  color: #e8d8ce;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin: 0.25rem 0;
+}
