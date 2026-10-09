@@ -4,10 +4,9 @@ export default function home() {
   return `
     <section class="hero">
       <h1>Merienda Online</h1>
-      <p class="subtitle">Söta eftermiddagsgodbitarna som du förtjänar</p>
+      <h2 class="subtitle">Söta eftermiddagsgodbitarna som du förtjänar</h2>
     </section>
     <section class="menu">
-      <h2>Vår Meny</h2>
       <div id="product-list" class="product-grid">
         <p>Laddar produkter...</p>
       </div>
